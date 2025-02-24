@@ -28,10 +28,12 @@ Route::prefix("/dashboard")->group(function () {
     Route::get('/admin/create-book', [AdminController::class, 'admin_create_buku_dashboard'])->name('admin_create_buku_dashboard');
     Route::get('/admin/update-book', [AdminController::class, 'admin_update_buku_dashboard'])->name('admin_update_buku_dashboard');
     Route::get('/admin/penulis', [AdminController::class, 'admin_penulis_dashboard'])->name('admin_penulis_dashboard');
+    Route::get('/admin/penulis/create', [AdminController::class, 'admin_create_penulis_dashboard'])->name('admin_create_penulis_dashboard');
     Route::get('/admin/penulis/update', [AdminController::class, 'admin_penulis_update_dashboard'])->name('admin_penulis_update_dashboard');
     Route::get('/admin/penerbit', [AdminController::class, 'admin_penerbit_dashboard'])->name('admin_penerbit_dashboard');
     Route::get('/admin/penerbit/update', [AdminController::class, 'admin_penerbit_update_dashboard'])->name('admin_penerbit_update_dashboard');
     Route::get('/admin/peminjaman', [AdminController::class, 'admin_peminjaman_dashboard'])->name('admin_peminjaman_dashboard');
     Route::get('/admin/kategori', [AdminController::class, 'admin_kategori_dashboard'])->name('admin_kategori_dashboard');
+    Route::get('/admin/kategori/create', [AdminController::class, 'admin_create_kategori_dashboard'])->name('admin_create_kategori_dashboard');
     Route::get('/settings', [SettingsController::class, 'pengaturan'])->name('pengaturan');
 });

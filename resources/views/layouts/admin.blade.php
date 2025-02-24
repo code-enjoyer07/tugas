@@ -31,9 +31,17 @@
                     <i class="fas fa-book mr-2"></i>
                     Update Buku
                 </a>
+                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="{{route('admin_create_kategori_dashboard')}}">
+                    <i class="fas fa-book mr-2"></i>
+                    Create kategori
+                </a>
                 <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="{{route('admin_kategori_dashboard')}}">
                     <i class="fas fa-book mr-2"></i>
                     Kategori Buku
+                </a>
+                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="{{route('admin_create_penulis_dashboard')}}">
+                    <i class="fas fa-pencil mr-2"></i>
+                    Create Penulis
                 </a>
                 <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="{{route('admin_penulis_dashboard')}}">
                     <i class="fas fa-pencil mr-2"></i>

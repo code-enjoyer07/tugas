@@ -41,10 +41,20 @@ class AdminController extends Controller
         $title = "Admin Kategori";
         return view('admin-kategori', compact('title'));
     }
+    public function admin_create_kategori_dashboard()
+    {
+        $title = "Form create kategori";
+        return view('admin-create-kategori', compact('title'));
+    }
     public function admin_penulis_update_dashboard()
     {
         $title = "Admin Penulis Update";
         return view('admin-penulis-update', compact('title'));
+    }
+    public function admin_create_penulis_dashboard()
+    {
+        $title = "Form create penulis";
+        return view('admin-create-penulis', compact('title'));
     }
     public function admin_penerbit_update_dashboard()
     {
